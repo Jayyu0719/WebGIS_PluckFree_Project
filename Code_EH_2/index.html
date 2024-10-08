@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="https://openlayers.org/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Using OpenLayers with Vite</title>
+  </head>
+  <body>
+    <div id="map">
+    <input id="swipe" type="range" min="0" max="100" value="50">
+    <div id="swipeDivider">
+    </div>
+    <h1 id="mapTitle">Fruit Tree Map</h1> <!-- Headline for the map -->
+    <div id="coordinates"></div>
+    <button id="addButton">Add new fruit tree</button>
+    <div id="attributeForm" class="attribute-form">
+      <h3>Enter Point Attributes</h3>
+      <label for="speciesInput">Species:</label>
+      <input type="text" id="speciesInput"><br><br>
+      <label for="yearInput">Year added:</label>
+      <input type="text" id="yearInput"></textarea><br><br>
+      <button id="okButton">OK!</button>
+    </div>  
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
