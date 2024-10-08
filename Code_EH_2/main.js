@@ -6,7 +6,7 @@ import XYZ from 'ol/source/XYZ';
 import LayerGroup from 'ol/layer/Group';
 import BingMaps from 'ol/source/BingMaps';
 import {getRenderPixel} from 'ol/render.js';
-
+// new attempt
 // import vector features
 import VectorLayer from 'ol/layer/Vector';
 import VectorSource from 'ol/source/Vector';
