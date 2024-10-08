@@ -1,0 +1,79 @@
+@import "node_modules/ol/ol.css";
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+#mapTitle {
+  position: absolute; /* Overlay the title on top of the map */
+  top: 150px; /* Distance from the top of the map */
+  left: 20px; /* Distance from the left of the map */
+  z-index: 10; /* Ensure it's above the map */
+  background: rgba(255, 255, 255, 0.7); /* Background color for visibility */
+  padding: 10px; /* Some padding */
+}
+
+#swipe {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: calc(100% - 20px);
+  z-index: 1000;
+}
+
+#swipeDivider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background-color: #ffffff;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+#coordinates {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(255,255,255,0.7);
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.attribute-form {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1003;
+  background: white;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+
+
+#addButton {
+  position: absolute;
+  top: 250px;
+  left: 20px;
+  z-index: 1002;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#addButton:hover {
+  background-color: #0056b3;
+}
